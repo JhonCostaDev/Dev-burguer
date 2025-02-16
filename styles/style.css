@@ -1,0 +1,5 @@
+@import "tailwindcss";
+/*DESCOBRIR COMO COLOCAR BACKGROUND-IMAGE NO TAILWIND 4.0*/
+body {
+    background-color: #F6F7F8;
+}
