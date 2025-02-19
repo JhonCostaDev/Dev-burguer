@@ -7,6 +7,11 @@
     <!--biblioteca de icones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--biblioteca de icones-->
+    <!--Fonte Google Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap" rel="stylesheet"/>
+    <!--ENd Fonte Google Roboto-->
     <title>Dev-Burguer</title>
 </head>
 <body>
@@ -44,9 +49,9 @@
     <!---->
     <!--Init Menu-->
     <div id="menu">
-        <main>
-            <!--Produtos-->
-            <div>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 mb:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!--Produtos 1-->
+            <div class="flex gap-2">
                 <img 
                 src="/assets/hamb-1.png" 
                 alt="Hamburger Smash"
@@ -59,20 +64,213 @@
                     <p class="text-sm">
                         Pão levinho de fermentação natural de Trigo, burger 160g, queijo prato e maionese da casa.
                     </p>
+
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">
-                            R$ 18.90
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn">
+                            R$ 18.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Hamburger Smash"
+                                data-price="18.90"
+                                >
                                 <i class="fa fa-cart-plus text-lg text-white"></i>
                             </button>
-                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+                <!--Produtos 2-->
+            <div class="flex gap-2">
+                <img 
+                src="/assets/hamb-2.png" 
+                alt="Hamburger Duplo"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">
+                        Hamburger Duplo
+                    </p>
+                    <p class="text-sm">
+                        Pão levinho de fermentação natural de Trigo, burger 160g, queijo prato e maionese da casa.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">
+                            R$ 32.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Hamburger Duplo"
+                                data-price="32.90"
+                                >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!--Produtos 3-->
+            <div class="flex gap-2">
+                <img 
+                src="/assets/hamb-3.png" 
+                alt="Hamburger da Casa"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">
+                        Hamburger da Casa
+                    </p>
+                    <p class="text-sm">
+                        Pão levinho de fermentação natural de Trigo, burger 160g, queijo prato e maionese da casa.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">
+                            R$ 35.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Hamburger da Casa"
+                                data-price="35.90"
+                                >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        
+                    </div>
+                </div>
+            </div>
+                <!--Produtos 4-->
+            <div class="flex gap-2">
+                <img 
+                src="/assets/hamb-4.png" 
+                alt="Hamburger Vegano"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">
+                        Hamburger Vegano
+                    </p>
+                    <p class="text-sm">
+                        Pão levinho de fermentação natural de Trigo, burger 160g, queijo prato e maionese da casa.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">
+                            R$ 25.90</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Hamburger Vegano"
+                                data-price="25.90"
+                                >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        
                     </div>
                 </div>
             </div>
 
         </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">BEBIDAS</h2>
+        </div>
+
+        <!--BEBIDAS-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mb:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+            <div class="flex gap-2">
+                <img 
+                src="/assets/refri-1.png" 
+                alt="Hamburger Smash"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">
+                        Cola-Cola
+                    </p>
+                    <p class="text-sm">
+                        Clássica cola-cola lata 300ml.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">
+                            R$ 8.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Cola-Cola"
+                                data-price="8.99"
+                                >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        
+                    </div>
+                </div>
+            </div>
+                <!--Produtos 2-->
+            <div class="flex gap-2">
+                <img 
+                src="/assets/refri-2.png" 
+                alt="Hamburger Duplo"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">
+                        Guaraná Antartica
+                    </p>
+                    <p class="text-sm">
+                        Guaraná Antártica lata 300ml.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">
+                            R$ 6.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Guaraná Antartica"
+                                data-price="6.99"
+                                >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--MODAL CART-->
+<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden">
+    <div class="bg-white p-5 rounded-md rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+        <p class="font-bold mt-4">Endereço de entrega:</p>
+        <input 
+            type="text" 
+            class="w-full border-2 p-1 rounded my-1"
+            id="address"
+            placeholder="Digite seu endereço completo"
+        >
+        <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+            <button id="close-modal-btn">Fechar</button>
+            <button id="checkou-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+        </div>
+
     </div>
 
-    
+</div>
+<!--END MODAL CART-->
+<!--footer-->
+<footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+    <button 
+    class="flex items-center gap-2 text-white font-bold"
+    id="cart-btn"
+    >
+        (<span>0</span>)
+        Ver Carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+</footer>
 </body>
 </html>
